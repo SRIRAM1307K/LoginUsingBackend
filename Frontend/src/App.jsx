@@ -23,7 +23,9 @@ function App() {
     event.preventDefault();
 
     axios
-      .get(`http://localhost:3000/login?username=${user}&password=${pass}`)
+      .get(
+        `https://login-using-backendserver.vercel.app/?username=${user}&password=${pass}`
+      )
       .then(function (response) {
         if (response.data === true) {
           navigate("/success");
