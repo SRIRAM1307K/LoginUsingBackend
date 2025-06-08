@@ -4,7 +4,13 @@ const app = express()
 const cors = require('cors')
 
 
-app.use(cors())
+app.use(cors(
+    {
+        origin: "http://localhost:3000",
+        methods: ["GET", "POST"],   
+        credentials: true
+    }
+))
 
 const username = "sriram"
 const password = 123
