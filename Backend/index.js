@@ -6,7 +6,7 @@ const cors = require('cors')
 
 app.use(cors(
     {
-        origin: "https://login-using-backendserver.vercel.app/",
+        origin: "https://login-using-backendfrontend.vercel.app/",
         methods: ["GET", "POST"],   
         credentials: true
     }
